@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { robots } from './robots';
-import CardList from './CardList';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
+import { robots } from './robots';
+import CardList from './CardList';
 
 ReactDOM.render( 
     <
-        CardList robots = {robots}
+        App
     />
-, document.getElementById('root'));
+   
+    , document.getElementById('root')
+);
 registerServiceWorker();
